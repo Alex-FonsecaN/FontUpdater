@@ -1,0 +1,19 @@
+Version 0.5
+
+Go to "Font > Font Updater" Tab.
+
+If your project is using TMP:
+- Select a new TMP Font Asset to replace all your project with.
+- To Change All fonts in the Scenes, click "Change all Fonts in Scenes - TMPRO" (THE SCENES MUST BE IN BUILD SETTINGS).
+- To Change All fonts in the Prefabs, click "Change all Fonts in Prefabs - TMPRO". 
+- To run both options, click "Change all Fonts in Project- TMPRO". 
+
+If your project is using Legacy Text:
+- To Change All fonts in the Scenes, click "Change all Fonts in Scenes - LEGACY TEXT"(THE SCENES MUST BE IN BUILD SETTINGS).
+- To Change All fonts in the Prefabs, click "Change all Fonts in Prefabs - LEGACY TEXT". 
+- For both options, click "Change all Fonts in Project- LEGACY TEXT".
+
+If your project is using both, check both tutorials.
+
+Options:
+- "Debug objects' names": Show the name of all the gameobjects from the texts that were changed.
