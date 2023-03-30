@@ -257,11 +257,14 @@ namespace FontUpdater
         {
             GUIPage1 gUIPage1 = new GUIPage1(changeAllTextFonts, this);
 
-            GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height/100 * 20));
+           // GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height/100 * 20));
             gUIPage1.TopLayout();
-            GUILayout.EndArea();
+            // GUILayout.EndArea();
+            gUIPage1.LeftLayout();
 
-            /*
+
+
+
             GUILayout.Label("LEGACY TEXT AREA");
           
             changeAllTextFonts.newTextFont = (Font)EditorGUILayout.ObjectField(changeAllTextFonts.newTextFont, typeof(Font), false);
@@ -316,7 +319,7 @@ namespace FontUpdater
                 GUILayout.Label("Changes were made! Reload scene or re-open prefab");
 
             }
-            */
+            
 
         }
         IEnumerator HideWarning()
@@ -337,19 +340,18 @@ namespace FontUpdater
         }
         public void TopLayout()
         {
-            GUILayout.FlexibleSpace();
-            GUILayout.BeginHorizontal();
+            //GUILayout.FlexibleSpace();
+            //GUILayout.BeginHorizontal();
             //GUI.DrawTexture(new Rect(0, 0, Screen.width / 100 * 5, Screen.height / 100 * 5),);
-            GUILayout.FlexibleSpace();
+            //GUILayout.FlexibleSpace();
             GUILayout.Label("TMP AREA");
 
-            GUILayout.FlexibleSpace();
-            GUILayout.EndHorizontal();
-            GUILayout.FlexibleSpace();
+            //GUILayout.FlexibleSpace();
+            //GUILayout.EndHorizontal();
+            //GUILayout.FlexibleSpace();
             changeAllTextFonts.newTmpFontAsset = (TMP_FontAsset)EditorGUILayout.ObjectField(changeAllTextFonts.newTmpFontAsset, typeof(TMP_FontAsset), false);
-
         }
-        public void LeftArea()
+        public void LeftLayout()
         {
 
 
